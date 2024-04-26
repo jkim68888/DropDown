@@ -70,11 +70,19 @@ class ViewController: UIViewController {
     }
     
     private func showDropDown() {
+        UIView.animate(withDuration: 0.3, animations: {
+            self.chooseMenuBtn.imageView?.transform = CGAffineTransformMakeRotation(Double.pi)
+        })
+        
         dimView.isHidden = false
         dropDownView.isHidden = false
     }
     
     private func hideDropDown() {
+        UIView.animate(withDuration: 0.3, animations: {
+            self.chooseMenuBtn.imageView?.transform = CGAffineTransformMakeRotation(Double.pi - 3.14159)
+        })
+        
         dimView.isHidden = true
         dropDownView.isHidden = true
     }
