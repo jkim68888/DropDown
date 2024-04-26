@@ -13,6 +13,7 @@
 		A94378992BDB7DD9003E5EDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A94378982BDB7DD9003E5EDC /* Assets.xcassets */; };
 		A943789C2BDB7DD9003E5EDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A943789A2BDB7DD9003E5EDC /* LaunchScreen.storyboard */; };
 		A94378A42BDB813A003E5EDC /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94378A32BDB813A003E5EDC /* Extension.swift */; };
+		A94378A62BDB9669003E5EDC /* DropDownTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94378A52BDB9669003E5EDC /* DropDownTableViewCell.swift */; };
 		FE23DE4BAAAFF83AEC40DCC6 /* Pods_DropDown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 333342AFBE176C7B2A3E6AFE /* Pods_DropDown.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		A943789B2BDB7DD9003E5EDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A943789D2BDB7DD9003E5EDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A94378A32BDB813A003E5EDC /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		A94378A52BDB9669003E5EDC /* DropDownTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownTableViewCell.swift; sourceTree = "<group>"; };
 		E86894CB20AAA7B8CDF8FB1A /* Pods-DropDown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropDown.debug.xcconfig"; path = "Target Support Files/Pods-DropDown/Pods-DropDown.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +85,7 @@
 				A943788F2BDB7DD7003E5EDC /* AppDelegate.swift */,
 				A94378912BDB7DD7003E5EDC /* SceneDelegate.swift */,
 				A94378932BDB7DD7003E5EDC /* ViewController.swift */,
+				A94378A52BDB9669003E5EDC /* DropDownTableViewCell.swift */,
 				A94378A32BDB813A003E5EDC /* Extension.swift */,
 				A94378982BDB7DD9003E5EDC /* Assets.xcassets */,
 				A943789A2BDB7DD9003E5EDC /* LaunchScreen.storyboard */,
@@ -206,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A94378942BDB7DD7003E5EDC /* ViewController.swift in Sources */,
+				A94378A62BDB9669003E5EDC /* DropDownTableViewCell.swift in Sources */,
 				A94378902BDB7DD7003E5EDC /* AppDelegate.swift in Sources */,
 				A94378922BDB7DD7003E5EDC /* SceneDelegate.swift in Sources */,
 				A94378A42BDB813A003E5EDC /* Extension.swift in Sources */,

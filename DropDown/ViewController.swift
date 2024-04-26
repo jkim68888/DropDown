@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  DropDown
-//
-//  Created by Financial CB on 2024/04/26.
-//
-
 import SnapKit
 
 class ViewController: UIViewController {
@@ -118,55 +111,5 @@ extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50
-    }
-}
-
-extension UIView {
-    func addSubviews(_ views: [UIView]) {
-        _ = views.map { self.addSubview($0) }
-    }
-    
-    func viewContainingController() -> UIViewController? {
-        var nextResponder: UIResponder? = self
-        
-        repeat {
-            nextResponder = nextResponder?.next
-            
-            if let viewController = nextResponder as? UIViewController {
-                return viewController
-            }
-            
-        } while nextResponder != nil
-        
-        return nil
-    }
-}
-
-class DropDownTableViewCell: UITableViewCell {
-    static let identifier = "DropDownCell"
-    
-    var menuLabel = UILabel()
-
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-    }
-    
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-        setUI()
-        setConstraints()
-    }
-    
-    // MARK: - ui 셋팅
-    private func setUI() {
-        contentView.addSubview(menuLabel)
-    }
-    
-    private func setConstraints() {
-        menuLabel.snp.makeConstraints {
-            $0.top.bottom.equalToSuperview()
-            $0.leading.equalToSuperview().offset(20)
-            $0.trailing.equalToSuperview().offset(-20)
-        }
     }
 }
