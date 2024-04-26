@@ -13,9 +13,12 @@
 		A94378972BDB7DD7003E5EDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A94378952BDB7DD7003E5EDC /* Main.storyboard */; };
 		A94378992BDB7DD9003E5EDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A94378982BDB7DD9003E5EDC /* Assets.xcassets */; };
 		A943789C2BDB7DD9003E5EDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A943789A2BDB7DD9003E5EDC /* LaunchScreen.storyboard */; };
+		FE23DE4BAAAFF83AEC40DCC6 /* Pods_DropDown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 333342AFBE176C7B2A3E6AFE /* Pods_DropDown.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		069F288D63AA4630675142C6 /* Pods-DropDown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropDown.release.xcconfig"; path = "Target Support Files/Pods-DropDown/Pods-DropDown.release.xcconfig"; sourceTree = "<group>"; };
+		333342AFBE176C7B2A3E6AFE /* Pods_DropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A943788C2BDB7DD7003E5EDC /* DropDown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropDown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A943788F2BDB7DD7003E5EDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A94378912BDB7DD7003E5EDC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		A94378982BDB7DD9003E5EDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A943789B2BDB7DD9003E5EDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A943789D2BDB7DD9003E5EDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E86894CB20AAA7B8CDF8FB1A /* Pods-DropDown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropDown.debug.xcconfig"; path = "Target Support Files/Pods-DropDown/Pods-DropDown.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE23DE4BAAAFF83AEC40DCC6 /* Pods_DropDown.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E62F3C438564DC6E8B9A19A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				333342AFBE176C7B2A3E6AFE /* Pods_DropDown.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		951E97A31982D935692F060B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E86894CB20AAA7B8CDF8FB1A /* Pods-DropDown.debug.xcconfig */,
+				069F288D63AA4630675142C6 /* Pods-DropDown.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A94378832BDB7DD7003E5EDC = {
 			isa = PBXGroup;
 			children = (
 				A943788E2BDB7DD7003E5EDC /* DropDown */,
 				A943788D2BDB7DD7003E5EDC /* Products */,
+				951E97A31982D935692F060B /* Pods */,
+				8E62F3C438564DC6E8B9A19A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A94378A02BDB7DD9003E5EDC /* Build configuration list for PBXNativeTarget "DropDown" */;
 			buildPhases = (
+				033232DD16396717AB9ED90C /* [CP] Check Pods Manifest.lock */,
 				A94378882BDB7DD7003E5EDC /* Sources */,
 				A94378892BDB7DD7003E5EDC /* Frameworks */,
 				A943788A2BDB7DD7003E5EDC /* Resources */,
+				0154FDC15BA8EDF68F92CA9B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0154FDC15BA8EDF68F92CA9B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DropDown/Pods-DropDown-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DropDown/Pods-DropDown-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DropDown/Pods-DropDown-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		033232DD16396717AB9ED90C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DropDown-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A94378882BDB7DD7003E5EDC /* Sources */ = {
@@ -287,6 +356,7 @@
 		};
 		A94378A12BDB7DD9003E5EDC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E86894CB20AAA7B8CDF8FB1A /* Pods-DropDown.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,6 +385,7 @@
 		};
 		A94378A22BDB7DD9003E5EDC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 069F288D63AA4630675142C6 /* Pods-DropDown.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
